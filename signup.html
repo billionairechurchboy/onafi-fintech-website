@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Started — Onafi</title>
+  <meta name="description" content="Create your Onafi account.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body data-page="signup">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="hero dark" style="min-height:calc(100vh - 76px)">
+      <div class="container hero-grid" style="align-items:start">
+        <div style="padding-top:20px">
+          <span class="eyebrow">Get started</span>
+          <h1 style="font-size:clamp(2.3rem,4.6vw,3.6rem)">Create your <span class="hl">Onafi</span> account.</h1>
+          <p class="lead">Join individuals and businesses using Onafi to move money, get paid and stay in control.</p>
+          <ul class="feature-list" style="margin-top:28px">
+            <li><i data-icon="check"></i>Set up in minutes</li>
+            <li><i data-icon="check"></i>Collect payments, send transfers and track transactions</li>
+            <li><i data-icon="check"></i>Upgrade your plan any time</li>
+          </ul>
+        </div>
+
+        <div class="form-card reveal" style="color:var(--text)">
+          <form data-demo novalidate>
+            <div class="form-grid">
+              <div class="full">
+                <label>Account type</label>
+                <div class="toggle-group">
+                  <input type="radio" name="type" id="t-personal" value="personal"><label for="t-personal"><i data-icon="user"></i>Personal</label>
+                  <input type="radio" name="type" id="t-business" value="business" checked><label for="t-business"><i data-icon="building"></i>Business</label>
+                </div>
+              </div>
+              <div><label for="s-first">First name</label><input id="s-first" autocomplete="given-name" required></div>
+              <div><label for="s-last">Last name</label><input id="s-last" autocomplete="family-name" required></div>
+              <div class="full"><label for="s-email">Email address</label><input id="s-email" type="email" autocomplete="email" required></div>
+              <div><label for="s-phone">Phone number</label><input id="s-phone" type="tel" autocomplete="tel" required></div>
+              <div><label for="s-country">Country</label>
+                <select id="s-country" required>
+                  <option>Nigeria</option><option>Ghana</option><option>Kenya</option><option>South Africa</option><option>Rwanda</option><option>Côte d’Ivoire</option><option>Egypt</option><option>Other</option>
+                </select>
+              </div>
+              <div class="full"><label for="s-biz">Business name <span class="muted" style="font-weight:400">(optional)</span></label><input id="s-biz" autocomplete="organization"></div>
+              <div class="full"><label for="plan">Plan</label>
+                <select id="plan">
+                  <option value="personal">Personal</option>
+                  <option value="starter" selected>Starter</option>
+                  <option value="growth">Growth</option>
+                  <option value="enterprise">Enterprise (our team will contact you)</option>
+                </select>
+              </div>
+              <div class="full"><label class="check"><input type="checkbox" required> I agree to the Terms of Use and Privacy Policy.</label></div>
+              <div class="full"><button class="btn btn-primary btn-block" type="submit">Create Account <i data-icon="arrow"></i></button></div>
+              <p class="fine full center" style="margin:0">Already have an account? <a href="#" style="color:var(--forest-3);font-weight:600">Sign in</a></p>
+            </div>
+          </form>
+          <div class="form-success" role="status">
+            <div class="icon lime"><i data-icon="check"></i></div>
+            <h3>You’re on your way!</h3>
+            <p class="muted">We’ve received your details. Check your email for the next steps.</p>
+            <a class="btn btn-dark" href="index.html" style="margin-top:8px">Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

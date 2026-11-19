@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resources — Onafi</title>
+  <meta name="description" content="Developer documentation, guides and help for getting the most out of Onafi.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>.anchor { scroll-margin-top: 100px; }</style>
+</head>
+<body data-page="resources">
+  <header id="site-header"></header>
+
+  <main>
+    <section class="hero dark page-hero solo">
+      <div class="container">
+        <span class="eyebrow">Resources</span>
+        <h1>Learn, build and get <span class="hl">the most</span> out of Onafi.</h1>
+        <p class="lead">Developer documentation, practical guides and answers to common questions — all in one place.</p>
+        <div class="chips" style="margin-top:32px">
+          <a class="chip" href="#developers">Developers</a>
+          <a class="chip" href="#guides">Guides</a>
+          <a class="chip" href="#help">Help Centre</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developers -->
+    <section class="section anchor" id="developers">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">Developers</span>
+          <h2>Everything you need to integrate.</h2>
+          <p class="lead">Build payments into your website, app or internal systems with well-documented APIs and SDKs.</p>
+          <div class="grid grid-2" style="margin-top:28px">
+            <a class="contact-opt" href="#"><span class="icon"><i data-icon="book"></i></span><div><b>API Reference</b><p>Endpoints, parameters and responses.</p></div></a>
+            <a class="contact-opt" href="#"><span class="icon"><i data-icon="zap"></i></span><div><b>Quick Start</b><p>Accept your first test payment.</p></div></a>
+            <a class="contact-opt" href="#"><span class="icon"><i data-icon="plug"></i></span><div><b>Plugins &amp; SDKs</b><p>Libraries for popular platforms.</p></div></a>
+            <a class="contact-opt" href="#"><span class="icon"><i data-icon="activity"></i></span><div><b>Webhooks</b><p>React to payment events in real time.</p></div></a>
+          </div>
+        </div>
+        <div class="code reveal">
+          <div class="code-bar"><i></i><i></i><i></i><span>Terminal</span></div>
+<pre><span class="c"># Initialise a transaction</span>
+curl https://api.onafi.dev/v1/transactions \
+  -H <span class="s">"Authorization: Bearer $ONAFI_TEST_KEY"</span> \
+  -H <span class="s">"Content-Type: application/json"</span> \
+  -d <span class="s">'{
+    "email": "customer@example.com",
+    "amount": 2450000,
+    "currency": "NGN",
+    "reference": "order_2041"
+  }'</span>
+
+<span class="c"># Response</span>
+{
+  <span class="p">"status"</span>: <span class="k">true</span>,
+  <span class="p">"checkout_url"</span>: <span class="s">"https://checkout.onafi.dev/x8k2p"</span>
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guides -->
+    <section class="section anchor" id="guides" style="background:var(--paper)">
+      <div class="container">
+        <div class="section-head reveal" style="max-width:700px">
+          <span class="eyebrow">Guides</span>
+          <h2>Practical guides for businesses.</h2>
+          <p class="lead">Step-by-step advice to help you get paid, stay organised and grow.</p>
+        </div>
+        <div class="grid grid-4">
+          <a class="res-card reveal" href="#"><div class="res-thumb t1"><i data-icon="link"></i></div><div class="res-body"><span class="kind">Getting started</span><h3>Create your first payment link</h3><p>Set up a link and share it with customers in minutes.</p><span class="link-arrow">Read guide <i data-icon="arrow"></i></span></div></a>
+          <a class="res-card reveal" href="#"><div class="res-thumb t2"><i data-icon="store"></i></div><div class="res-body"><span class="kind">Online selling</span><h3>Adding checkout to your online store</h3><p>A simple walkthrough for website owners.</p><span class="link-arrow">Read guide <i data-icon="arrow"></i></span></div></a>
+          <a class="res-card reveal" href="#"><div class="res-thumb t3"><i data-icon="report"></i></div><div class="res-body"><span class="kind">Operations</span><h3>Reconciling transactions each month</h3><p>Keep your books clean with your Onafi reports.</p><span class="link-arrow">Read guide <i data-icon="arrow"></i></span></div></a>
+          <a class="res-card reveal" href="#"><div class="res-thumb t4"><i data-icon="globe"></i></div><div class="res-body"><span class="kind">Expansion</span><h3>Selling across African markets</h3><p>What to consider when you start serving new countries.</p><span class="link-arrow">Read guide <i data-icon="arrow"></i></span></div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Help -->
+    <section class="section anchor" id="help">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Help Centre</span>
+          <h2>Common questions.</h2>
+        </div>
+        <div class="faq reveal">
+          <details open><summary>How do I open an account?</summary><p>Select <a href="signup.html" style="color:var(--forest-3);font-weight:600">Get Started</a>, choose a personal or business account and follow the steps. You’ll be asked to verify some details to keep your account safe.</p></details>
+          <details><summary>How long do transfers take?</summary><p>Most transfers are processed quickly. You’ll see the status of each transfer in your dashboard and receive a notification when it completes.</p></details>
+          <details><summary>How do I issue a refund to a customer?</summary><p>Open the transaction in your dashboard and choose “Refund”. You can refund the full amount or part of it.</p></details>
+          <details><summary>Can I add team members to my business account?</summary><p>Yes, on Growth and Enterprise plans you can invite team members and assign roles and permissions.</p></details>
+          <details><summary>I need more help. Who can I contact?</summary><p>Our support team is ready to help. <a href="contact.html?topic=support" style="color:var(--forest-3);font-weight:600">Contact support</a> and we’ll get back to you.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Can’t find what you’re looking for?</h2>
+          <p>Get in touch and our team will point you in the right direction.</p>
+          <div class="btn-row"><a class="btn btn-primary" href="contact.html">Contact Us <i data-icon="arrow"></i></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
